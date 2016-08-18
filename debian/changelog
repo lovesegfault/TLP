@@ -1,6 +1,4 @@
-tlp (0.8.902-1~sysv) unstable; urgency=low
-
-  * Development package
+tlp (0.9-1~sysv) unstable; urgency=low
 
   [Thomas Koch]
   * debian/rules: add 'make clean' to clean target
@@ -10,8 +8,9 @@ tlp (0.8.902-1~sysv) unstable; urgency=low
   * debian/tlp.postinst,tlp.postrm:
     - upstream moved tlp-nop to /usr/share/tlp-pm/
     - remove systemd-rfkill@.service mask/unmask
+  * debian/watch: adapt to GitHub releases
 
- -- Thomas Koch <linrunner@gmx.net>  Fri, 25 Dec 2015 21:42:12 +0200
+ -- Thomas Koch <linrunner@gmx.net>  Thu, 18 Aug 2016 15:00:42 +0200
 
 tlp (0.8-1) unstable; urgency=low
 
