@@ -7,6 +7,7 @@ tlp (0.9.901-1~sysv) unstable; urgency=low
     - [b8cbaa7] Recommend linux-tools on Ubuntu only (Closes: #852204)
     - [da84365] Add missing dependency on lsb-base
   * debian/tlp.postinst,postrm: tlp-nop moved to /usr/share/tlp
+  * debian/rules: fix invocation of dh_gencontrol with $(SUBSTVARS)
 
  -- Thomas Koch <linrunner@gmx.net>  Thu, 26 Jan 2017 20:42:04 +0100
 
