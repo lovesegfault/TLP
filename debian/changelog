@@ -6,8 +6,9 @@ tlp (0.9.901-1~sysv) unstable; urgency=low
   * Merge changes from collab-maint: debian/0.9-2
     - [b8cbaa7] Recommend linux-tools on Ubuntu only (Closes: #852204)
     - [da84365] Add missing dependency on lsb-base
+  * debian/tlp.postinst,postrm: tlp-nop moved to /usr/share/tlp
 
- -- Thomas Koch <linrunner@gmx.net>  Tue, 24 Jan 2017 23:42:33 +0100
+ -- Thomas Koch <linrunner@gmx.net>  Thu, 26 Jan 2017 20:42:04 +0100
 
 tlp (0.9-1~sysv) unstable; urgency=low
 
