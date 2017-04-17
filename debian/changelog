@@ -1,4 +1,4 @@
-tlp (0.9.902-1~sysv) unstable; urgency=low
+tlp (0.9.903-1~sysv) unstable; urgency=low
 
   [Thomas Koch]
   * New upstream release
@@ -10,7 +10,7 @@ tlp (0.9.902-1~sysv) unstable; urgency=low
   * debian/rules: fix invocation of dh_gencontrol with $(SUBSTVARS)
   * debian/tlp.manpages: install everything in man/
 
- -- Thomas Koch <linrunner@gmx.net>  Thu, 26 Jan 2017 22:22:24 +0100
+ -- Thomas Koch <linrunner@gmx.net>  Mon, 17 Apr 2017 11:21:42 +0200
 
 tlp (0.9-1~sysv) unstable; urgency=low
 
