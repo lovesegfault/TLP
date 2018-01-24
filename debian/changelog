@@ -1,9 +1,9 @@
-tlp (1.0.901-1~sysv) unstable; urgency=low
+tlp (1.1-1~sysv) unstable; urgency=low
 
   [Thomas Koch]
-  * New upstream beta version
+  * New upstream version
 
- -- Thomas Koch <linrunner@gmx.net>  Tue, 19 Dec 2017 12:42:14 +0200
+ -- Thomas Koch <linrunner@gmx.net>  Tue, 24 Jan 2018 06:51:42 +0100
 
 tlp (1.0-1~sysv) unstable; urgency=low
 
