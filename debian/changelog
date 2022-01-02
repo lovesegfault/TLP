@@ -10,6 +10,7 @@ tlp (1.5.0~beta.1-2) unstable; urgency=medium
   * tlp.postinst/rm: refactor mask/unmask of conflicting services
   * Remove Pre-Depends: dpkg (>= 1.17.14)
   * control: update Description:
+  * Revert debhelper compatibility level to 11 (Ubuntu 18.04)
 
  -- Thomas Koch <linrunner@gmx.net>  Sun, 02 Jan 2022 14:50:42 +0100
 
