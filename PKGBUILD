@@ -24,7 +24,7 @@ install=tlp.install
 
 pkgver() {
   # ../ to leave src/
-  sed -r 's/-/_/' ../VERSION
+  echo "$(sed -r 's/-/_/' ../VERSION)_$(date +%Y%m%d)"
 }
 
 package_tlp-dev() {
