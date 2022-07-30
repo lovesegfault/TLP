@@ -59,6 +59,7 @@ package_tlp-git() {
 
   # -C .. to leave src/ 
   make DESTDIR="${pkgdir}" -C .. install-tlp install-man-tlp
+  make -C .. clean
 }
 
 package_tlp-rdw-git() {
@@ -72,6 +73,7 @@ package_tlp-rdw-git() {
 
   # -C .. to leave src/ 
   make DESTDIR="${pkgdir}" -C .. install-rdw install-man-rdw
+  make -C .. clean
 }
 
 # vim: ts=2 sw=2 et:
