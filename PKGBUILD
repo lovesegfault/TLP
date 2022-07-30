@@ -1,4 +1,9 @@
 # Build packages from local Git working tree
+#
+# CAUTION: this PKGBUILD is a quick hack for my
+# personal development workflow on Arch Linux.
+# Do *not* use for any kind of repository
+#
 # Maintainer: Thomas Koch <linrunner@gmx.net>
 # Contributor: Sven Karsten Greiner <sven@sammyshp.de>
 # Contributor: Maxime Gauduin <alucryd@archlinux.org>
@@ -22,8 +27,8 @@ pkgver() {
   sed -r 's/-/_/' ../VERSION
 }
 
-package_tlp-git() {
-  pkgdesc='Linux Advanced Power Management'
+package_tlp-dev() {
+  pkgdesc='Optimize Linux Laptop Battery Life'
   depends=(
     hdparm
     iw
@@ -46,6 +51,7 @@ package_tlp-git() {
     pm-utils
     power-profiles-daemon
     tlp
+    tlp-git
   )
   backup=(etc/tlp.conf)
 
@@ -57,21 +63,24 @@ package_tlp-git() {
   export TLP_WITH_ELOGIND=0
   export TLP_WITH_SYSTEMD=1
 
-  # -C .. to leave src/ 
+  # Hack: -C .. to leave src/
   make DESTDIR="${pkgdir}" -C .. install-tlp install-man-tlp
   make -C .. clean
 }
 
-package_tlp-rdw-git() {
-  pkgdesc='Linux Advanced Power Management - Radio Device Wizard'
+package_tlp-rdw-dev() {
+  pkgdesc='Optimize Linux Laptop Battery Life - Radio Device Wizard'
   depends=(
     networkmanager
     tlp
   )
   provides=(tlp-rdw)
-  conflicts=(tlp-rdw)
+  conflicts=(
+    tlp-rdw
+    tlp-rdw-git
+  )
 
-  # -C .. to leave src/ 
+  # Hack: -C .. to leave src/
   make DESTDIR="${pkgdir}" -C .. install-rdw install-man-rdw
   make -C .. clean
 }
