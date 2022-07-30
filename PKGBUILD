@@ -2,7 +2,7 @@
 #
 # CAUTION: this PKGBUILD is a quick hack for my
 # personal development workflow on Arch Linux.
-# Do *not* use for any kind of repository
+# Do *not* use for any kind of repository.
 #
 # Maintainer: Thomas Koch <linrunner@gmx.net>
 # Contributor: Sven Karsten Greiner <sven@sammyshp.de>
