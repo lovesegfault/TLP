@@ -9,10 +9,10 @@
 # Contributor: Maxime Gauduin <alucryd@archlinux.org>
 # Contributor: Marc Schulte <bomba@nerdstube.de>
 
-pkgbase=tlp-git
+pkgbase=tlp-dev
 pkgname=(
-  tlp-git
-  tlp-rdw-git
+  tlp-dev
+  tlp-rdw-dev
 )
 pkgver=1.6.0_alpha.0
 pkgrel=1
